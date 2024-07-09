@@ -30,17 +30,17 @@ spec:
     - name: your-image-container
       image: your-image
 
-# Step 3: Create the Pod:
+##Step 3: Create the Pod:
 kubectl create -f pod.definition.yml
 -This command reads the YAML file (pod.definition.yml) and creates the Pod defined within it.
 
-# Step 4: Verify Pod Creation
+##Step 4: Verify Pod Creation
 kubectl get pods
 
-# Optional Step 5: Interact with the Pod
-# Get Pod Details
+##Optional Step 5: Interact with the Pod
+##Get Pod Details
 kubectl describe pod myapp-pod
 
-# View Pod Logs
+##View Pod Logs
 kubectl logs myapp-pod
 
