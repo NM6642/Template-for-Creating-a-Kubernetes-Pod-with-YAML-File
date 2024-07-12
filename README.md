@@ -1,4 +1,4 @@
-- # Creating a Kubernetes Pod with YAML File
+ # Creating a Kubernetes Pod with YAML File
 
 This guide outlines the steps to create a Kubernetes Pod using a YAML file (pod.definition.yml) and kubectl.
 
