@@ -28,7 +28,9 @@ metadata:
 spec:
   containers:
     - name: your-image-container
-      image: your-image
+      image: your-image```
+
+
 
 ##Step 3: Create the Pod:
 kubectl create -f pod.definition.yml
