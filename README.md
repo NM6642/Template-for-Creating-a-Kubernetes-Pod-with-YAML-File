@@ -32,11 +32,12 @@ spec:
       image: your-image
 
 
+### Step 3: Create the Pod
 
+To create the Pod, use the following command:
 
-### Step 3: Create the Pod:
-kubectl create -f pod.definition.yml
--This command reads the YAML file (pod.definition.yml) and creates the Pod defined within it.
+```bash
+# kubectl create -f pod.definition.yml
 
 ## Step 4: Verify Pod Creation
 kubectl get pods
