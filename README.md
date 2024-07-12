@@ -19,6 +19,7 @@ Create necessary directories for your project and navigate into the pod director
 Create a file named pod.definition.yml and add the following content. Replace your-image with the Docker image you want to use.
 
 
+```yaml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -29,6 +30,7 @@ spec:
   containers:
     - name: your-image-container
       image: your-image
+```
 
 
 ### Step 3: Create the Pod
