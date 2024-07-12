@@ -32,18 +32,18 @@ spec:
       image: your-image
 
 
-##Step 3: Create the Pod:
+###Step 3: Create the Pod:
 kubectl create -f pod.definition.yml
 -This command reads the YAML file (pod.definition.yml) and creates the Pod defined within it.
 
-##Step 4: Verify Pod Creation
+## Step 4: Verify Pod Creation
 kubectl get pods
 
-##Optional Step 5: Interact with the Pod
-##Get Pod Details
+## Optional Step 5: Interact with the Pod
+## Get Pod Details
 kubectl describe pod myapp-pod
 
-##View Pod Logs
+## View Pod Logs
 kubectl logs myapp-pod
 
 ## Additional Methods for Creating a Pod
@@ -54,12 +54,12 @@ You can create a Pod directly using the `kubectl run` command:
 sh
 kubectl run myapp-pod --image=your-image
 
-##Method 2: Generate YAML Using kubectl run with --dry-run
+## Method 2: Generate YAML Using kubectl run with --dry-run
 You can generate the YAML definition for a Pod using kubectl run with the --dry-run option:
 kubectl run myapp-pod --image=your-image --dry-run=client -o yaml > pod.generated.yml
 This command performs a dry run (--dry-run=client) to generate the YAML configuration for a Pod named myapp-pod using the image your-image. The YAML output is redirected (>) to a file named pod.generated.yml.
 
-##Create the Pod Using Generated YAML
+## Create the Pod Using Generated YAML
 After generating the YAML file, you can create the Pod using the generated configuration file:
 kubectl create -f pod.generated.yml
 
