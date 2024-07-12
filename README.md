@@ -33,16 +33,16 @@ spec:
 ```
 
 
-### Step 3: Create the Pod
+## Step 3: Create the Pod
 
 To create the Pod, use the following command:
-# kubectl create -f pod.definition.yml
+ kubectl create -f pod.definition.yml
 
 ## Step 4: Verify Pod Creation
 kubectl get pods
 
 ## Optional Step 5: Interact with the Pod
-## Get Pod Details
+# Get Pod Details
 kubectl describe pod myapp-pod
 
 ## View Pod Logs
@@ -50,10 +50,10 @@ kubectl logs myapp-pod
 
 ## Additional Methods for Creating a Pod
 
-### Method 1: Using `kubectl run`
+# Method 1: Using `kubectl run`
 
 You can create a Pod directly using the `kubectl run` command:
-sh
+
 kubectl run myapp-pod --image=your-image
 
 ## Method 2: Generate YAML Using kubectl run with --dry-run
