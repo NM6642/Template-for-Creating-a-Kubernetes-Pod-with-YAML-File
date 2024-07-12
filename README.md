@@ -30,13 +30,11 @@ spec:
   containers:
     - name: your-image-container
       image: your-image
-
+` ``` `
 
 ### Step 3: Create the Pod
 
 To create the Pod, use the following command:
-
-```bash
 # kubectl create -f pod.definition.yml
 
 ## Step 4: Verify Pod Creation
